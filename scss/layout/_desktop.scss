@@ -1,6 +1,12 @@
+@use "../abstracts" as *;
+
 .desktop {
   background-image: url("../assets/desktop-win-8.jpeg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+
+  @include media(max, 32) {
+    background-image: url("../assets/phone-samung-1.jpg");
+  }
 }

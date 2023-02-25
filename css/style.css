@@ -26,6 +26,11 @@ img {
   background-position: center;
   background-size: cover;
 }
+@media (max-width: 32em) {
+  .desktop {
+    background-image: url("../assets/phone-samung-1.jpg");
+  }
+}
 
 .icon {
   display: grid;
@@ -44,6 +49,12 @@ img {
   gap: 1.25rem;
   text-align: center;
 }
+@media (max-width: 32em) {
+  .icon-grid {
+    grid-template-columns: repeat(auto-fit, 5rem);
+    place-content: center;
+  }
+}
 .icon-image {
   width: 2.5rem;
   align-self: baseline;
@@ -52,6 +63,6 @@ img {
   text-transform: capitalize;
 }
 .icon:hover {
-  background-color: hsla(225deg, 100%, 92%, 0.25);
-  border-color: hsl(225deg, 100%, 92%);
+  background-color: hsla(224.5714285714, 68.6274509804%, 90%, 0.25);
+  border-color: hsl(224.5714285714, 68.6274509804%, 90%);
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,19 @@
+// sass modules
+@use "sass:math";
+
+// partiols import
+@use "./functions" as *;
+
+// media query mixin
+//* this is not how i'd do a media query mixin in the regular basis ok
+@mixin media($range, $point) {
+  @media (#{$range}-width: #{
+    if(
+      math.is-unitless($point),
+      #{$point} + em,
+      convert($point, em)
+    )
+  }) {
+    @content;
+  }
+}
