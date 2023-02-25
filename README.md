@@ -1,4 +1,4 @@
-#Comp206 | Javascript Sheet 1
+# Comp206 | Javascript Sheet 1
 
 Welcome I am [Samir Ahmad](https://github.com/SamirAhmad5445) and this is a solution to [js sheet 1](https://drive.google.com/file/d/1lOjS_C1OZBSSuOQcADZ3qUh7yHsG3100/view) from course comp206 or web development Dr.Mohammad Hashem.
 
