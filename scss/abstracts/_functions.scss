@@ -1,0 +1,9 @@
+@use "sass:color";
+@use "./colors" as *;
+
+@function color($clr, $alpha: 1) {
+  $h: hue($clr);
+  $s: saturation($clr);
+  $l: lightness($clr);
+  @return hsl($h, $s, $l, $alpha);
+}

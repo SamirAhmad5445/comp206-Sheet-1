@@ -1,0 +1,40 @@
+@use "../abstracts" as *;
+
+$icon-width: 5rem;
+$icon-color: hsl(225, 100%, 92%);
+
+.icon {
+  display: grid;
+  place-items: center;
+  width: $icon-width;
+  padding: 0.25rem;
+  border: 0.125rem solid transparent;
+  border-radius: 0.25rem;
+  aspect-ratio: 1;
+  cursor: pointer;
+
+  &-grid {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, $icon-width);
+    gap: 1.25rem;
+    text-align: center;
+
+    // debugging only
+    // background-color: springgreen;
+  }
+
+  &-image {
+    width: $icon-width * 0.5;
+    align-self: baseline;
+  }
+
+  &-label {
+    text-transform: capitalize;
+  }
+
+  &:hover {
+    background-color: color($icon-color, 0.25);
+    border-color: color($icon-color);
+  }
+}
