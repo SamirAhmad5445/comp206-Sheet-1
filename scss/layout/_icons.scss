@@ -33,10 +33,17 @@ $icon-color: #d4ddf7;
 
   &-label {
     text-transform: capitalize;
+    color: $icon-color;
   }
 
-  &:hover {
-    background-color: color($icon-color, 0.25);
-    border-color: color($icon-color);
+  @include media(min, 32) {
+    &-label {
+      color: black;
+    }
+
+    &:hover {
+      background-color: color($icon-color, 0.25);
+      border-color: color($icon-color);
+    }
   }
 }

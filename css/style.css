@@ -61,8 +61,14 @@ img {
 }
 .icon-label {
   text-transform: capitalize;
+  color: #d4ddf7;
 }
-.icon:hover {
-  background-color: hsla(224.5714285714, 68.6274509804%, 90%, 0.25);
-  border-color: hsl(224.5714285714, 68.6274509804%, 90%);
+@media (min-width: 32em) {
+  .icon-label {
+    color: black;
+  }
+  .icon:hover {
+    background-color: hsla(224.5714285714, 68.6274509804%, 90%, 0.25);
+    border-color: hsl(224.5714285714, 68.6274509804%, 90%);
+  }
 }/*# sourceMappingURL=style.css.map */
