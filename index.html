@@ -4,14 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon.png" type="image/png" />
     <title>comp206 | Sheet 1</title>
     <link rel="stylesheet" href="./css/style.css" />
     <script defer src="./javascript/main.js"></script>
+    <script defer src="./javascript/solution.js"></script>
   </head>
 
   <body class="desktop">
     <div class="icon-grid">
-      <div class="icon" data-index="1">
+      <div class="icon" tabindex="1" data-index="1">
         <div class="icon-image">
           <img
             src="./assets/app-icon-desktop.jpg"
@@ -22,9 +24,9 @@
             alt=""
           />
         </div>
-        <p class="icon-label">app 1</p>
+        <p class="icon-label">calculator</p>
       </div>
-      <div class="icon" data-index="2">
+      <div class="icon" tabindex="1" data-index="2">
         <div class="icon-image">
           <img
             src="./assets/app-icon-desktop.jpg"
@@ -35,9 +37,9 @@
             alt=""
           />
         </div>
-        <p class="icon-label">app 2</p>
+        <p class="icon-label">table</p>
       </div>
-      <div class="icon" data-index="3">
+      <div class="icon" tabindex="1" data-index="3">
         <div class="icon-image">
           <img
             src="./assets/app-icon-desktop.jpg"
@@ -48,9 +50,9 @@
             alt=""
           />
         </div>
-        <p class="icon-label">app 3</p>
+        <p class="icon-label">function</p>
       </div>
-      <div class="icon" data-index="4">
+      <div class="icon" tabindex="1" data-index="4">
         <div class="icon-image">
           <img
             src="./assets/app-icon-desktop.jpg"
@@ -61,9 +63,9 @@
             alt=""
           />
         </div>
-        <p class="icon-label">app 4</p>
+        <p class="icon-label">register</p>
       </div>
-      <div class="icon" data-index="5">
+      <div class="icon" tabindex="1" data-index="5">
         <div class="icon-image">
           <img
             src="./assets/app-icon-desktop.jpg"
@@ -74,20 +76,44 @@
             alt=""
           />
         </div>
-        <p class="icon-label">app 5</p>
+        <p class="icon-label">order</p>
       </div>
-      <div class="icon" data-index="6">
-        <div class="icon-image">
-          <img
-            src="./assets/app-icon-desktop.jpg"
-            srcset="
-              ./assets/app-icon-phone.png    512w,
-              ./assets/app-icon-desktop.jpg 1200w
-            "
-            alt=""
-          />
-        </div>
-        <p class="icon-label">app 6</p>
+    </div>
+    <div class="app-grid">
+      <div class="app app-1 bg-accent" data-index="1">
+        <nav class="app-header">
+          <div class="label">calculator</div>
+          <button class="close">x</button>
+        </nav>
+        <div class="solution"></div>
+      </div>
+      <div class="app app-2" data-index="2">
+        <nav class="app-header">
+          <div class="label">table</div>
+          <button class="close">x</button>
+        </nav>
+        <div class="solution"></div>
+      </div>
+      <div class="app app-3 bg-accent" data-index="3">
+        <nav class="app-header">
+          <div class="label">function</div>
+          <button class="close">x</button>
+        </nav>
+        <div class="solution"></div>
+      </div>
+      <div class="app app-4" data-index="4">
+        <nav class="app-header">
+          <div class="label">register</div>
+          <button class="close">x</button>
+        </nav>
+        <div class="solution"></div>
+      </div>
+      <div class="app app-5" data-index="5">
+        <nav class="app-header">
+          <div class="label">order</div>
+          <button class="close">x</button>
+        </nav>
+        <div class="solution"></div>
       </div>
     </div>
   </body>

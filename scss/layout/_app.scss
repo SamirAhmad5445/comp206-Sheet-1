@@ -1,0 +1,112 @@
+@use "../abstracts" as *;
+
+$app-background: #efefef;
+$app-border: #4682b4;
+$app-label: #030303;
+
+.app {
+  position: absolute;
+  max-width: 450px;
+  background-color: $app-background;
+  border: 0.25rem solid color($app-border, 0.7);
+  border-radius: 0.5rem;
+  box-shadow: 0.365rem 0.5rem 1rem $app-label;
+  pointer-events: auto;
+  // opacity: 0;
+
+  &-grid {
+    position: absolute;
+    isolation: isolate;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  &-1 {
+    top: 20%;
+    left: 15%;
+  }
+
+  &-2 {
+    top: 10%;
+    right: 30%;
+  }
+
+  &-3 {
+    top: 35%;
+    right: 20%;
+  }
+
+  &-4 {
+    top: 20%;
+    right: 15%;
+  }
+
+  &-5 {
+    bottom: 20%;
+    left: 25%;
+  }
+
+  &:not(.opened) {
+    display: none;
+  }
+
+  &.active {
+    z-index: 99;
+  }
+
+  &-header {
+    position: relative;
+    background-color: $app-border;
+    inset: 0 0 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0.25rem;
+
+    .close {
+      padding: 0 0.25rem;
+      background-color: hsl(0, 70%, 40%);
+      border-color: hsl(0, 80%, 40%);
+      color: hsl(0, 70%, 90%);
+      aspect-ratio: 1;
+      line-height: 0.4rem;
+      cursor: pointer;
+    }
+
+    .label {
+      font-weight: 600;
+      margin-left: 0.5rem;
+    }
+  }
+
+  .solution {
+    padding: 1rem;
+  }
+
+  @include media(max, 32) {
+    max-width: none;
+    inset: 0;
+    border: none;
+    border-radius: 0;
+
+    &-header {
+      background-color: $app-label;
+      color: white;
+
+      .close {
+        background-color: transparent;
+        border: none;
+        font-size: 125%;
+        color: white;
+      }
+    }
+
+    &:not(.active) {
+      display: none;
+    }
+  }
+}
+
+.bg-accent {
+  background-color: lightskyblue;
+}

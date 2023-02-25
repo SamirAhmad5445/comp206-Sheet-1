@@ -1,1 +1,48 @@
 @use "../abstracts" as *;
+
+table {
+  border: 0.0625rem solid #1e1e20;
+}
+
+table * {
+  border: inherit;
+  border-color: black;
+  padding: 0.125rem;
+}
+
+br {
+  margin-block: 0.5rem;
+}
+
+h2 {
+  margin-block: 1.25rem;
+}
+
+.question-3 {
+  font-family: "Times New Roman", Times, serif;
+  color: blue;
+  padding: 0.125rem;
+}
+.question-3 h2 {
+  text-align: center;
+}
+.question-3 :is(table, table *) {
+  border-color: transparent;
+}
+.btn-container {
+  background-color: burlywood;
+  text-align: center;
+}
+.btn {
+  background-color: blue;
+  color: yellow;
+  border: 0;
+  padding: 0.5rem 2rem;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.question-5 {
+  padding: 1rem;
+}

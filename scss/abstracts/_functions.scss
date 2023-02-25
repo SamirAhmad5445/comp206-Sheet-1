@@ -3,9 +3,6 @@
 @use "sass:math";
 @use "sass:string";
 
-// partials import
-@use "./colors" as *;
-
 // take a color and return it in the hsl() formate
 @function color($clr, $alpha: 1) {
   $h: hue($clr);
