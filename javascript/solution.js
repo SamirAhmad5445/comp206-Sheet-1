@@ -103,7 +103,7 @@ const f = function (x) {
   } else if (x >= 1 && x < 20) {
     return x ** 2 - 4;
   } else if (x >= 20 && x <= 35) {
-    return (Math.sqrt(x - 4) / 2) * x;
+    return Math.sqrt(x - 4) / (2 * x);
   } else {
     return undefined;
   }
@@ -182,13 +182,13 @@ const passError = question5.querySelector(".pass-error");
 orderingForm.onsubmit = (event) => {
   event.preventDefault();
 
-  if (!orderingForm.querySelector("#name").value) {
+  if (orderingForm.querySelector("#name").value != "XYZ") {
     nameError.innerHTML = "Name Error!";
     nameError.style.color = "red";
   } else {
     nameError.innerHTML = "";
   }
-  if (!orderingForm.querySelector("#pass").value) {
+  if (orderingForm.querySelector("#pass").value != "1234") {
     passError.innerHTML = "Password Error!";
     passError.style.color = "red";
   } else {
@@ -196,7 +196,7 @@ orderingForm.onsubmit = (event) => {
   }
 
   if (
-    orderingForm.querySelector("#name").value == "xyz" &&
+    orderingForm.querySelector("#name").value == "XYZ" &&
     orderingForm.querySelector("#pass").value == "1234"
   ) {
     window.alert("Thank your order is completed");
